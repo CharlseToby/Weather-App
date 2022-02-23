@@ -46,7 +46,10 @@ form.addEventListener("submit", e => {
     }
   }
   /* --fetch data-- */
-  apiRequest(citySearch).then(displayData);
+  apiRequest(citySearch).then(displayData).catch(() => {
+    errorMessage.textContent = "The city name entered is not valid";
+    errorMessageDOM.style.display = "block";
+  });
   form.reset();
   input.focus();
 });
@@ -88,7 +91,7 @@ function displayData(data) {
           </div>
           <p id="temp-description">${description}</p>
         </div>`;
-        
+
   ContentDOM.insertAdjacentHTML("afterbegin", cityData);
   /* console.log(cityName, country, iconElement, tempElement, description, id); */
   id++;
