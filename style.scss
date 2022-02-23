@@ -1,0 +1,116 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Rimouski";
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.wrapper {
+  padding: 10px;
+  background-color: #ddd;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 10px;
+  .container {
+    position: relative;
+    padding: 16px 0;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 8px;
+    .clear {
+      width: 20px;
+      height: 20px;
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      cursor: pointer;
+    }
+    h1 {
+      padding-bottom: 30px;
+      font-size: 3rem;
+    }
+    input[type="text"] {
+      outline: none;
+      border-bottom: 1px solid #333;
+      height: 30px;
+      min-width: 200px;
+      padding: 8px;
+      font-size: 1.3rem;
+      margin-right: 8px;
+    }
+    button {
+      border: none;
+      outline: none;
+      background-color: #ddd;
+      border-radius: 5px;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      cursor: pointer;
+    }
+    .notification {
+      margin-top: 5px;
+      padding: 5px 8px;
+      background-color: #f8d7da;
+      display: none;
+    }
+    .notification p {
+      color: #721c24;
+      font-size: 1.1rem;
+      margin: 0;
+      padding: 10px 0;
+    }
+  }
+}
+
+/* -------------MAIN CONTENT STYLING---------- */
+main {
+  margin-bottom: 40px;
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+  .city {
+    position: relative;
+    width: 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    height: 320px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .close {
+      position: absolute;
+      right: 10px;
+      top: 5px;
+      cursor: pointer;
+    }
+    h2 {
+      align-self: flex-start;
+      margin: 10px 5px;
+    }
+    img {
+      width: 100%;
+      height: auto;
+    }
+    .temperature-value {
+      font-size: 2.5rem;
+      margin: 10px 0;
+    }
+    p {
+      font-size: 1.1rem;
+      margin: 8px 0;
+    }
+  }
+}

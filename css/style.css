@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Rimouski";
+}
+
+input {
+  border: none;
+  outline: none;
+}
+
+.wrapper {
+  padding: 10px;
+  background-color: #ddd;
+  min-height: 100vh;
+}
+
+header {
+  margin-bottom: 10px;
+}
+
+header .container {
+  position: relative;
+  padding: 16px 0;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 8px;
+}
+
+header .container .clear {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+}
+
+header .container h1 {
+  padding-bottom: 30px;
+  font-size: 3rem;
+}
+
+header .container input[type="text"] {
+  outline: none;
+  border-bottom: 1px solid #333;
+  height: 30px;
+  min-width: 200px;
+  padding: 8px;
+  font-size: 1.3rem;
+  margin-right: 8px;
+}
+
+header .container button {
+  border: none;
+  outline: none;
+  background-color: #ddd;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+header .container .notification {
+  margin-top: 5px;
+  padding: 5px 8px;
+  background-color: #f8d7da;
+  display: none;
+}
+
+header .container .notification p {
+  color: #721c24;
+  font-size: 1.1rem;
+  margin: 0;
+  padding: 10px 0;
+}
+
+/* -------------MAIN CONTENT STYLING---------- */
+main {
+  margin-bottom: 40px;
+}
+
+main .container {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .city {
+  position: relative;
+  width: 250px;
+  background-color: #fff;
+  border-radius: 10px;
+  height: 320px;
+  padding: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .city .close {
+  position: absolute;
+  right: 10px;
+  top: 5px;
+  cursor: pointer;
+}
+
+main .city h2 {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin: 10px 5px;
+}
+
+main .city img {
+  width: 100%;
+  height: auto;
+}
+
+main .city .temperature-value {
+  font-size: 2.5rem;
+  margin: 10px 0;
+}
+
+main .city p {
+  font-size: 1.1rem;
+  margin: 8px 0;
+}
+/*# sourceMappingURL=style.css.map */
