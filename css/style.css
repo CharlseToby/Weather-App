@@ -137,6 +137,11 @@ main .city .temperature-value {
   margin: 10px 0;
 }
 
+main .city .temperature-value #city-temp {
+  font-size: 4rem;
+  vertical-align: top;
+}
+
 main .city p {
   font-size: 1.1rem;
   margin: 8px 0;

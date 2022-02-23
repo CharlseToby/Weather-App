@@ -36,7 +36,7 @@ form.addEventListener("submit", e => {
     });
 
     if(filteredArray.length > 0) {
-      errorMessage.textContent = "Weather info for this city has been displayed already, enter a different city or add country code";
+      errorMessage.textContent = "Weather info for this city has been displayed already, enter a different city or add country code after a comma";
 
       errorMessageDOM.style.display = "block";
 
@@ -47,7 +47,7 @@ form.addEventListener("submit", e => {
   }
   /* --fetch data-- */
   apiRequest(citySearch).then(displayData).catch(() => {
-    errorMessage.textContent = "The city name entered is not valid";
+    errorMessage.textContent = "The city name entered is not valid. To add country code, ensure to place a comma after city name. (E.g lagos,ng)";
     errorMessageDOM.style.display = "block";
   });
   form.reset();
